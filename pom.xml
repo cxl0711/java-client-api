@@ -35,10 +35,10 @@
       <url>scm:git:https://github.com/jenkinsci/java-client-api.git</url>
     </site>
   </distributionManagement>
-  <ciManagement>
+  <!-- <ciManagement>
     <system>Travis-CI</system>
     <url>https://travis-ci.org/jenkinsci/java-client-api/</url>
-  </ciManagement>
+  </ciManagement> -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
