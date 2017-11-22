@@ -42,7 +42,7 @@ jobs:
           
       - run:
         command: |
-          cp target/* /tmp/core_dumps
+          cp ~/java-client-api/jenkins-client/target/* /tmp/core_dumps
         when: on_fail
       - store_artifacts:
           path: /tmp/core_dumps
