@@ -41,7 +41,7 @@ jobs:
           # path: 
           
       - run:
-        command:
+        command: |
           cp target/* /tmp/core_dumps
         when: on_fail
       - store_artifacts:
