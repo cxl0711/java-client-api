@@ -25,7 +25,7 @@ jobs:
 
       # Download and cache dependencies
       - restore_cache:
-          keys: java-client-api-{{ checksum "pom.xml" }}
+          key: java-client-api-{{ checksum "pom.xml" }}
 
       - run: mvn clean package -DskipTests -B
 
