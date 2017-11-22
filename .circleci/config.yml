@@ -42,7 +42,7 @@ jobs:
           
       - run:
         command: |
-          cp /target/* /tmp/core_dumps
+          cp src/* /tmp/core_dumps
         when: on_fail
       - store_artifacts:
           path: /tmp/core_dumps
