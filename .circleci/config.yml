@@ -37,5 +37,13 @@ jobs:
       # run tests!
       # - run: mvn integration-test
       
+      # - store_artifacts:
+          # path: 
+          
+      - run:
+        command: |
+          mkdir -p /tmp/core_dumps
+          cp core.* /tmp/core_dumps
+        when: on_fail
       - store_artifacts:
-          path: 
+          path: /tmp/core_dumps
